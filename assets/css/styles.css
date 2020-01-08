@@ -216,6 +216,34 @@
 }
 
 
+.slides-text {
+    margin-bottom: -5px;
+    color: red;
+}
+
+.article-category-heading {
+    font-size: 22px;
+    color: red;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.overlay-play {
+    height: 40px;
+    width: 40px;
+    background: red;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.overlay-play:hover {
+    color: white !important;
+}
+
 /* ----------  Media Queries ---------- */
 
 /* Large devices (desktops, less than 1200px) */
