@@ -69,7 +69,7 @@
 👤 **Simon Peter Debbarma**
 
 - Github: [@simonpeterdebbarma](https://github.com/simonpeterdebbarma)
-- Twitter: [@simonpdebbarma](https://twitter.com/simonpdebbarma)
+- Twitter: [@SimonLikelySaid](https://twitter.com/SimonLikelySaid)
 - Linkedin: [Linkedin](https://www.linkedin.com/in/simon-peter-debbarma/)
 - Keybase: @simonpd
 
