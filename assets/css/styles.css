@@ -289,9 +289,12 @@ ul {
   overflow: hidden;
 }
 
+.footer-top-left {
+  width: 600px;
+}
+
 .footer-top-right {
-  display: flex;
-  justify-content: space-between;
+  display: inline;
   font-size: 18px;
   line-height: 14px;
 }
