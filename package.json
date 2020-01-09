@@ -1,7 +1,7 @@
 {
-  "name": "css-grid",
+  "name": "newsweek",
   "version": "1.0.0",
-  "description": "In this project, we are going to take basic layout of smashing magazine and try to re-create a heat map.",
+  "description": "Yet another clone, but with a twist - we get to use Bootstrap. ",
   "main": "index.js",
   "scripts": {
     "start": "run-script-os",
@@ -21,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sz16900/heat_map_smashing_mag.git"
+    "url": "git+https://github.com/simonpeterdebbarma/newsweek.git"
   },
   "bugs": {
-    "url": "https://github.com/sz16900/heat_map_smashing_mag/issues"
+    "url": "https://github.com/simonpeterdebbarma/newsweek/issues"
   },
-  "homepage": "https://github.com/sz16900/heat_map_smashing_mag#readme"
+  "homepage": "https://github.com/simonpeterdebbarma/newsweek#readme"
 }

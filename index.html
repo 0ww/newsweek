@@ -3,20 +3,1864 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://kit.fontawesome.com/956f16babc.js" crossorigin="anonymous"></script>
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   </head>
+
   <body>
+    <header class="block">
+      <div class="page-header">
+        <div class="container">
+          <div class="header-top flex-xs">
+            <div class="header-top-left">
+              <div class="header-date header-elements">Mon, Jan 06, 2020</div>
+            </div>
+           <div class="header-top-right">
+             <a href="#" class="header-sign-in" >
+               <div class="header-elements">SIGN IN</div>
+             </a>
+              <a href="#" class="header-subscribe">
+                <div class="header-elements">
+                  SUBSCRIBE
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header-middle">
+            <a class="brand" href="/">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+              <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+              </g></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="navbar nav-white-large navbar-expand-lg p-0 border-bottom mb-1 text-capitalize position-relative">
+          <div class="red-shape-navbar position-absolute"></div>
+          <div class="navbar-position top-0 right-0 collapse navbar-collapse z-index-3" id="navbar-list">
+            <section class="d-flex flex-column flex-lg-row navbar-section">
+              <h6 class="d-none">
+                navigation bar
+              </h6>
+              <ul class="order-1 order-lg-0 list-group flex-lg-row flex-nowrap nav navbar-nav pb-1">
+                <li class="list-group-item nav-item rounded-0 border-0 p-0 text-uppercase">
+                  <a href="#us" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      u.s.
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#world" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      world
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#business" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      business
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#tech-science" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      tech & science
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#culture" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      culture
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#newsgeek" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      newsgeek
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#sports" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      sports
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#health" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      health
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0 rounded-0">
+                  <a href="#opinion" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-0 border-lg-right">
+                      opinion
+                    </h5>
+                  </a>
+                </li>
+                <li class="list-group-item nav-item border-0 p-0">
+                  <a href="#vantage" class="text-black-red text-decoration-none">
+                    <h5 class="font-weight-bolder py-2 px-2 border-lg-right">
+                      vantage
+                    </h5>
+                  </a>
+                </li>
+              </ul>
+              <div class="order-0 order-lg-1 nav-item border-0 pt-2 pt-lg-0 px-2 w-input bg-white rounded-0">
+                <div class="input-group clearfix">
+                  <input type="text" class="nav-form form-control float-left" placeholder="Search"
+                      aria-label="searching" aria-describedby="button-search">
+                  <div class="input-group-append float-left">
+                    <button class="btn btn-outline-light px-2 py-1" id="button-search">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-small-container">
+        <nav class="navbar nav-small fixed-top navbar-light bg-red">
+          <a class="navbar-brand" href="/">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+            <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+            </g></svg>
+          </a>
+          <div class="header-top-right align-middle">
+            <a href="#" class="header-sign-in" >
+              <div class="header-elements">SIGN IN</div>
+            </a>
+             <a href="#" class="header-subscribe">
+               <div class="header-elements">
+                 SUBSCRIBE
+                 <i class="fas fa-chevron-right"></i>
+               </div>
+             </a>
+            <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           </div>
+        </nav>
+      </div>
+    </header>
+    
+
+    <main class="main container-fluid">
+      <div class="row">
+
+        <!-- First Two Columns -->
+        <div class="col-lg-9 d-md-flex flex-row-reverse">
+
+          <!-- Middle Content -->
+          <div class=" col-md-7 col-lg-8 p-0 pl-md-3 px-lg-3 ">
+
+            <!-- Top Story -->
+            <section class="list-group list-group-flush mb-4 mw-100 pl-md-3 px-lg-3">
+              <h6 class="list-group-item px-0 text-black-50 font-weight-bold text-uppercase">
+                top story
+              </h6>
+              <article class="list-group-item px-0 pt-0">
+                <div class="card border-0">
+                  <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/591x364/?space" alt="Unsplash is Down" />
+                  <div class="card-img-overlay p-0 d-flex">
+                    <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      <div class="p-2 font-weight-bold text-uppercase article-image-overlay-gradient">
+                        U.S.
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="my-2">
+                  <a href="#" class="text-body font-weight-bold text-decoration-none underline-red">
+                    We're Considering Bombing Butane vs. Space Blasting Weasel Dust with Julian Assange
+                  </a>
+                </h4>
+                <div class="my-2">
+                  The general promised that Iran would continue down the path of his predecessor Qassem Soleimani, following the U.S. assassination of the Quds Force leader.
+                </div>
+              </article>
+              <h5 class="list-group-item px-0 font-weight-bold">
+                <a href="#" class="text-black-red text-decoration-none">
+                  These 8-Track Recordings Show the Strangeness of Children Attached to "True Detective"
+                </a>
+              </h5>
+            </section>
+
+            <!-- Travel & Culture -->
+            <section id="travel-culture-large"
+                  class="list-group-flush mt-3 mb-4 p-0 pl-md-3 px-lg-3 bg-white">
+              <h6 class="list-group-item border-top-0 px-0 text-black-50 text-uppercase font-weight-bold">
+                travel & culture
+              </h6>
+              <article class="px-0 clearfix row">
+
+                <div class="col-sm-6  travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?caribbean,island"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      Saba: The Greatest Little Island You Never Heard Of
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    Islanders call Saba "The Unspoiled Queen of the Caribbean" for its pristine landscapes and striking biodiversity as well as the absence of crowds, chain stores, and cruise ship throngs.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?dance"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      The Most Iconic Dances to See Around the World 
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    From Brazilian martial-arts dancing to Turkish twirling meditation, the world moves in mysterious ways. Take a whirl around the globe to see some of the most iconic dance moves.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?jordan,lebanon"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      Welcome to the Red Planet: Wadi Rum, Jordan
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    An oasis of peace in a turbulent part of the world filled with biblical history and dramatic desert wonders, Jordan is about as otherworldly as you can get here on Earth.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?sauna,finland"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      Global Wellness Rituals to Try This Year
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    Every country has its own traditions and take on self-care. In Finland, it involves steamy saunas and icy dips; in Tibet, sound vibrations are believed to heal and harmonize the body; and in the United States, floating in darkened soundproof pods to chill out is enjoying a renaissance.
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <!-- More Stories -->
+            <section id="more-stories"
+                  class="list-group list-group-flush mt-3 mb-4 p-0 pl-md-3 px-lg-3 bg-white">
+              <h6 class="list-group-item border-top-0 px-0 font-weight-bold text-black-50 text-uppercase">
+                more stories
+              </h6>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?buddhism" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    People are Saying This New Buddhist Movie is the Next "Dexter"
+                  </a>
+                </h6>
+                <div>
+                  The British comedian Ricky Gervais hit back as the Golden Globes audience groaned at his Jeffrey Epstein jokes during his fifth hosting of the annual awards show.
+                </div>
+              </article>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?hooker" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    A Fucking Eternity with Adnan Syed and a Moldovan Sex Worker
+                  </a>
+                </h6>
+                <div>
+                  Democratic hopeful Michael Bloomberg said he believes the U.S. needs "more immigrants," not less, but if the U.S. wants to strengthen security, a border wall is not the best way.
+                </div>
+              </article>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?santiago" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    How Santiago's Answer to "Twin Peaks" Is Just Jim Carrey on Freebase
+                  </a>
+                </h6>
+                <div>
+                  Mergers with other galaxies may have knocked the black hole in dwarf galaxies off-center, creating "wandering" black holes.
+                </div>
+              </article>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?dance" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    Is the Zambian Bro-Step Scene Mushrooming?
+                  </a>
+                </h6>
+                <div>
+                  Ali Akbar Velayati said that the U.S. "took a foolish move" by assassinating Qassem Soleimani "and they must leave the region."
+                </div>
+              </article>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?diver" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    This is the Syrian Deep Sea Diver Who Wants to Make Belgrade the New Soho
+                  </a>
+                </h6>
+                <div>
+                  Liberal voters in New Hampshire have been gravitating away from Elizabeth Warren for Bernie Sanders since November, when she was leading the field with 31 percent.
+                </div>
+              </article>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?fire" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    New Zealand Sky Turns Orange as Smoke Spreads From Australia Bushfires
+                  </a>
+                </h6>
+                <div>
+                  Smoke from the devastating Australia bushfires left the sky in New Zealand orange today, and it was labeled "apocalyptic" and "very unnerving" by some residents who shared images on social media.
+                </div>
+              </article>
+              <article class="list-group-item px-0 clearfix">
+                <a href="#">
+                  <img class="w-40 float-left d-inline-block mr-2 mb-1"
+                      src="https://source.unsplash.com/random/135x90/?medicine" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none my-2 font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    Mystery Viral Infection in China Has Experts Baffled As SARS Ruled Out
+                  </a>
+                </h6>
+                <div>
+                  At least 59 people have come down with the virus, with the first person believed to have fallen ill on December 12.
+                </div>
+              </article>
+            </section>
+
+            <!-- Travel & Culture -->
+            <section id="travel-culture-small"
+                  class="list-group-flush mt-3 mb-4 p-0 pl-md-3 px-lg-3 bg-white">
+              <h6 class="list-group-item border-top-0 px-0 font-weight-bold text-black-50 text-uppercase">
+                travel & culture
+              </h6>
+              <article class="px-0 clearfix row">
+
+                <div class="col-sm-6  travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?caribbean,island"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      Saba: The Greatest Little Island You Never Heard Of
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    Islanders call Saba "The Unspoiled Queen of the Caribbean" for its pristine landscapes and striking biodiversity as well as the absence of crowds, chain stores, and cruise ship throngs.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?dance"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      The Most Iconic Dances to See Around the World 
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    From Brazilian martial-arts dancing to Turkish twirling meditation, the world moves in mysterious ways. Take a whirl around the globe to see some of the most iconic dance moves.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?jordan,lebanon"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      Welcome to the Red Planet: Wadi Rum, Jordan
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    An oasis of peace in a turbulent part of the world filled with biblical history and dramatic desert wonders, Jordan is about as otherworldly as you can get here on Earth.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 travel-card">
+                  <div class="card border-0">
+                    <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?sauna,finland"
+                        alt="Unsplash is Down" />
+                    <div class="card-img-overlay p-0 d-flex">
+                      <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      </a>
+                    </div>
+                  </div>
+                  <h4 class="my-2 font-weight-bold">
+                    <a href="#" class="text-black-red text-decoration-none">
+                      Global Wellness Rituals to Try This Year
+                    </a>
+                  </h4>
+                  <div class="my-2">
+                    Every country has its own traditions and take on self-care. In Finland, it involves steamy saunas and icy dips; in Tibet, sound vibrations are believed to heal and harmonize the body; and in the United States, floating in darkened soundproof pods to chill out is enjoying a renaissance.
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+
+          <!-- Left Aside -->
+          <div class="position-sticky sticky-top col-md-5 col-lg-4 aside-left">
+            <section class="featured-story list-group list-group-flush mb-4">
+              <h6 class="list-group-item px-0 text-black-50 font-weight-bold text-uppercase">
+                featured story
+              </h6>
+              <article class="list-group-item p-0 mb-3">
+                <div class="card border-0">
+                  <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?edm"
+                      alt="Unsplash is Down" />
+                  <div class="card-img-overlay p-0 d-flex">
+                    <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      <div class="p-2 font-weight-bold text-uppercase article-image-overlay-gradient">
+                        world
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="my-2 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none">
+                    I Caught Calvin Harris and a Scientologist Drug Baron Kissing Each Other
+                  </a>
+                </h4>
+                <div class="my-2">
+                  The Venezuelan opposition leader says he's focused on a "peaceful transition"
+                  but did not rule out foreign military intervention to oust Nicolas Maduro.
+                </div>
+              </article>
+              <article class="list-group-item p-0 mb-3">
+                <div class="card border-0">
+                  <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?children" alt="Unsplash is Down" />
+                  <div class="card-img-overlay p-0 d-flex">
+                    <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      <div class="p-2 font-weight-bold text-uppercase article-image-overlay-gradient">
+                          U.S.
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="my-2 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none">
+                    These Seedy Videos Illustrate the Exasperation of Children Hyped About Basuco
+                  </a>
+                </h4>
+                <div class="my-2">
+                  Trump’s true motives are clear—to deter asylum seekers and punish people who apply
+                  for protection under our laws," said ACLU Immigrants' Rights Project Senior Staff Attorney Michael Tan.
+                </div>
+              </article>
+              <article class="list-group-item p-0 mb-3">
+                <div class="card border-0">
+                  <img class="card-img-top rounded-0" src="https://source.unsplash.com/random/397x265/?iran" alt="Unsplash is Down" />
+                  <div class="card-img-overlay p-0 d-flex">
+                    <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                      <div class="p-2 font-weight-bold text-uppercase article-image-overlay-gradient">
+                          U.S.
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="my-2 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none">
+                    This is the Christian Donkey Fluffer Who Wants to Make Iran the New Los Cabos
+                  </a>
+                </h4>
+                <div class="my-2">
+                  Trump’s true motives are clear—to deter asylum seekers and punish people who apply
+                  for protection under our laws," said ACLU Immigrants' Rights Project Senior Staff Attorney Michael Tan.
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+
+        <!-- Right Aside -->
+        <div class="position-sticky sticky-top col-lg-3 row-lg d-flex flex-column aside-right">
+          <div class="mx-auto px-0">
+            <section id="opinion">
+              <h6 class="text-black-50 text-uppercase font-weight-bold">
+                opinion
+              </h6>
+              <div class="list-group list-group-flush">
+                <article class="list-group-item border-top-0 px-0 clearfix">
+                  <a href="#" class="col-3 col-sm-2 col-lg-3 mt-2 float-left pl-lg-0">
+                    <img class="img-fluid rounded-circle" src="https://source.unsplash.com/63x63/?portrait,face" alt="Unsplash is Down" />
+                  </a>
+                  <div class="summary float-none">
+                    <h6 class="font-weight-bold">
+                      <a href="#" class="text-black-red text-decoration-none">
+                        I Masqueraded as A Whistleblower of "The Yakuza"
+                      </a>
+                    </h6>
+                    <h6 class="text-black-50 font-weight-bold">
+                      By Newt Gingrich
+                    </h6>
+                  </div>
+                </article>
+                <article class="list-group-item px-0 clearfix">
+                  <a href="#" class="col-3 col-sm-2 col-lg-3 mt-2 float-left pl-lg-0">
+                    <img class="img-fluid rounded-circle" src="https://source.unsplash.com/63x63/?face,guy" alt="Unsplash is Down" />
+                  </a>
+                  <div class="summary float-none">
+                    <h6 class="font-weight-bold">
+                      <a href="#" class="text-black-red text-decoration-none">
+                        Injecting Blowcaine at Coachella: An Exposé
+                      </a>
+                    </h6>
+                    <h6 class="text-black-50 font-weight-bold">
+                      By David Magee
+                    </h6>
+                  </div>
+                </article>
+                <article class="list-group-item px-0 clearfix">
+                  <a href="#" class="col-3 col-sm-2 col-lg-3 mt-2 float-left pl-lg-0">
+                    <img class="img-fluid rounded-circle" src="https://source.unsplash.com/63x63/?man,portrait" alt="Unsplash is Down" />
+                  </a>
+                  <div class="summary ml-3 float-none">
+                    <h6 class="font-weight-bold">
+                      <a href="#" class="text-black-red text-decoration-none">
+                        Did This Loophole Save Trump Campaign from Conspiracy Charges?
+                      </a>
+                    </h6>
+                    <h6 class="text-black-50 font-weight-bold">
+                      By Nick Akerman
+                    </h6>
+                  </div>
+                </article>
+                <article class="list-group-item px-0 clearfix">
+                  <a href="#" class="col-3 col-sm-2 col-lg-3 mt-2 float-left pl-lg-0">
+                    <img class="img-fluid rounded-circle" src="https://source.unsplash.com/63x63/?beautiful,face" alt="Unsplash is Down" />
+                  </a>
+                  <div class="summary float-none">
+                    <h6 class="font-weight-bold">
+                      <a href="#" class="text-black-red text-decoration-none">
+                        We're Racking up Ecstasy with Sudan's Hackers
+                      </a>
+                    </h6>
+                    <h6 class="text-black-50 font-weight-bold">
+                      By Margaret A. Hamburg and Nicole Small
+                    </h6>
+                  </div>
+                </article>
+                <article class="list-group-item px-0 clearfix">
+                  <a href="#" class="col-3 col-sm-2 col-lg-3 mt-2 float-left pl-lg-0">
+                    <img class="img-fluid rounded-circle" src="https://source.unsplash.com/63x63/?cute,face" alt="Unsplash is Down" />
+                  </a>
+                  <div class="summary float-none">
+                    <h6 class="font-weight-bold">
+                      <a href="#" class="text-black-red text-decoration-none">
+                        A Taoist Lumberjack's Travels in Guadalahara
+                      </a>
+                    </h6>
+                    <h6 class="text-black-50 font-weight-bold">
+                      By Alonzo Neese
+                    </h6>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="latest-news list-group list-group-flush mt-4 mb-4">
+              <h6 class="text-black-50 font-weight-bold text-uppercase">
+                latest news
+              </h6>
+              <article class="list-group-item px-0 border-0 d-flex flex-row align-items-start">
+                <a href="#" class="col-6 pl-0">
+                  <img class="img-fluid" src="https://source.unsplash.com/397x265/?tijuana" alt="Unsplash is Down" />
+                </a>
+                <h6 class="col-6 px-0 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none d-inline-block mw-100 latest-text">
+                    Tijuana Gained a New Blowcaine Town
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item px-0 d-flex flex-row align-items-start">
+                <a href="#" class="col-6 pl-0">
+                  <img class="img-fluid" src="https://source.unsplash.com/397x265/?terrorism" alt="Unsplash is Down" />
+                </a>
+                <h6 class="col-6 px-0 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none d-inline-block mw-100  latest-text">
+                    I Pretended to be An Enemy of "The IRA"
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item px-0 d-flex flex-row align-items-start">
+                <a href="#" class="col-6 pl-0">
+                  <img class="img-fluid" src="https://source.unsplash.com/397x265/?women" alt="Unsplash is Down" />
+                </a>
+                <h6 class="col-6 px-0 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none d-inline-block mw-100  latest-text">
+                    What Being a Necrophiliac Taught Me About Women
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item px-0 d-flex flex-row align-items-start">
+                <a href="#" class="col-6 pl-0">
+                  <img class="img-fluid" src="https://source.unsplash.com/397x265/?colombia" alt="Unsplash is Down" />
+                </a>
+                <h6 class="col-6 px-0 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none d-inline-block mw-100  latest-text">
+                    A Zimbabwean Hacker's Travels in Medellin
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item px-0 d-flex flex-row align-items-start">
+                <a href="#" class="col-6 pl-0">
+                  <img class="img-fluid" src="https://source.unsplash.com/397x265/?dating" alt="Unsplash is Down" />
+                </a>
+                <h6 class="col-6 px-0 font-weight-bold">
+                  <a href="#" class="text-black-red text-decoration-none d-inline-block mw-100  latest-text">
+                    We Murdered Dr. Dre and Created an Account for it on Tinder
+                  </a>
+                </h6>
+              </article>
+            </section>
+          </div>
+          <div class="col-md row-lg mx-auto px-0 ">
+            <div class="sign-up col-9 col-sm-6 mx-auto col-md-12 px-0 my-4 mt-3 mb-4">
+              <div class="card bg-lpurple rounded-0">
+                <div class="card-body">
+                  <div class="clearfix h-10">
+                    <div class="float-left mr-2 mb-2 logo-n"></div>
+                    <h6 class="float-none text-uppercase text-dark font-weight-max">
+                      Sign up for our Newsletter
+                    </h6>
+                  </div>
+                  <button class="btn btn-secondary my-2 d-block rounded-0 text-uppercase font-weight-bold">
+                    Sign up <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                    Update your preferences
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsweek Consversation -->
+      <div class="row m-4">
+        <div class="w-100 my-3 py-1 d-flex flex-row justify-content-center border-bottom">
+          <div class="logo-n"></div>
+          <h6 class="mt-2 ml-1 text-uppercase text-dark font-weight-bold">
+            newsweek conversations
+          </h6>
+        </div>
+        <div class="row">
+          <div class="col-md-8 flex-grow-1">
+            <div class="row flex flex-row-reverse h-100">
+              <div class="card col-md-6 p-0 position-relative">
+                <img class="card-img-top h-100" src="https://source.unsplash.com/536x630/?portrait,grayscale" alt="Unsplash is Down" />
+                <div class="card-img-overlay p-0 d-flex">
+                  <a href="#" class="mt-auto text-decoration-none stretched-link overlay-play">
+                      <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-black flex-column col-md-6 py-5">
+                <h4 class="text-white font-weight-bold">
+                  The Vampire Diaries' Paul Wesley Talks Fame, Directing and CBS' 'Tell Me a Story'
+                </h4>
+                <p class="text-white">
+                  "I try my best not to drink the Kool-Aid too much, because that can be a slippery slope," Paul Wesley said about dealing with fame.
+                </p>
+                <p class="text-white-50">20:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column col-md-4 p-0">
+            <div class="d-flex flex-grow-1">
+              <div class="card col-4 p-0 position-relative">
+                <img class="card-img-top h-100 p-0" src="https://source.unsplash.com/500x500/?woman,grayscale" alt="Unsplash is Down" />
+                <div class="card-img-overlay p-0 d-flex">
+                  <a href="#" class="mt-auto text-decoration-none stretched-link overlay-play">
+                      <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-black col-8 flex-grow-1 px-2 py-3">
+                <h5 class="text-white font-weight-bold">
+                  'American Horror Story's' Leslie Grossman Is the Definition of a Great Hollywood Character Actress
+                </h5>
+                <p class="text-white-50">17:00</p>
+              </div>
+            </div>
+            <div class="d-flex flex-grow-1">
+              <div class="card col-4 p-0 position-relative">
+                <img class="card-img-top h-100 p-0" src="https://source.unsplash.com/500x500/?man,grayscale" alt="Unsplash is Down" />
+                <div class="card-img-overlay p-0 d-flex">
+                  <a href="#" class="mt-auto text-decoration-none stretched-link overlay-play">
+                      <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-black col-8 flex-grow-1 px-2 py-3">
+                <h5 class="text-white font-weight-bold">
+                  Newsweek Conversations with Actor Willem Dafoe
+                </h5>
+                <p class="text-white-50">49:00</p>
+              </div>
+            </div>
+            <div class="d-flex flex-grow-1">
+              <div class="card col-4 p-0 position-relative">
+                <img class="card-img-top h-100 p-0" src="https://source.unsplash.com/500x500/?girl,grayscale" alt="Unsplash is Down" />
+                <div class="card-img-overlay p-0 d-flex">
+                  <a href="#" class="mt-auto text-decoration-none stretched-link overlay-play">
+                      <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-black col-8 flex-grow-1 px-2 py-3">
+                <h5 class="text-white font-weight-bold">
+                  ‘Stranger Things’ Star Matthew Modine On New Movie ‘Miss Virginia’
+                </h5>
+                <p class="text-white-50">9:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--N The Magazine -->
+      <div class="in-magazine col-lg-12 px-0 my-4">
+        <div class="row">
+          <div class="cover col-md-3 mb-3 mt-auto pt-4">
+            <div class="card border-0">
+              <img class="card-img-top rounded-0" src="https://d.newsweek.com/en/full/1556038/january-03-17-2020-cover.jpg" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto p-2 font-weight-bold text-uppercase article-image-overlay-gradient
+                    text-red text-decoration-none stretched-link">
+                  january 17 issue
+                </a>
+              </div>
+            </div>
+            <button class="btn btn-light btn-block rounded-0 text-uppercase font-weight-bold">
+              See All Features <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="col-md-9">
+            <div class="my-3 py-1 d-flex flex-row justify-content-center border-bottom">
+              <div class="logo-n"></div>
+              <h6 class="mt-2 ml-1 text-uppercase text-dark font-weight-bold">
+                in the magazine
+              </h6>
+            </div>
+            <div class="row d-flex flex-column flex-md-row flex-nowrap">
+              <article class="col-md-4">
+                <a href="#">
+                  <img class="intro-img w-100 fit-md-cover rounded-0" src="https://source.unsplash.com/466x311/?queen,prince"
+                      alt="Unsplash is Down" />
+                </a>
+                <div class="clearfix my-2">
+                  <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                    cover
+                  </div>
+                  <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                      text-red text-decoration-none">
+                    world
+                  </a>
+                </div>
+                <h5 class="font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    Why Queen Elizabeth Is Quietly Ceding Power to Prince Charles
+                  </a>
+                </h5>
+              </article>
+              <article class="col-md-4">
+                <a href="#">
+                  <img class="intro-img w-100 fit-md-cover rounded-0" src="https://source.unsplash.com/466x311/?sf,silicon"
+                      alt="Unsplash is Down" />
+                </a>
+                <div class="clearfix my-2">
+                  <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                    features
+                  </div>
+                  <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                      text-red text-decoration-none">
+                    U.S.
+                  </a>
+                </div>
+                <h5 class="font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    Meet the Writers Behind Zurich's Version of "Silicon Valley"
+                  </a>
+                </h5>
+              </article>
+              <article class="col-md-4">
+                <a href="#">
+                  <img class="intro-img w-100 fit-md-cover rounded-0" src="https://source.unsplash.com/466x311/?britain,sikh"
+                      alt="Unsplash is Down" />
+                </a>
+                <div class="clearfix my-2">
+                  <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                    Downtime
+                  </div>
+                  <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                      text-red text-decoration-none">
+                    Culture
+                  </a>
+                </div>
+                <h5 class="font-weight-bold">
+                  <a href="#" class="text-body text-decoration-none underline-red">
+                    How #Brexit is Embracing Kalashnikovs With Sikh Pilots Near Penang
+                  </a>
+                </h5>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-row">
+          <div class="col-md-3">
+            <a href="#">
+              <img class="intro-img w-100 fit-md-cover" src="https://source.unsplash.com/466x311/?burger,boys" alt="Unsplash is Down" />
+            </a>
+            <div class="clearfix my-2">
+              <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                Downloads
+              </div>
+              <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                  text-red text-decoration-none">
+                U.S.
+              </a>
+            </div>
+            <h5 class="font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                I Began Life as A Representative of "The Burger Bar Boys"
+              </a>
+            </h5>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="intro-img w-100 fit-md-cover" src="https://source.unsplash.com/466x311/?neo,british" alt="Unsplash is Down" />
+            </a>
+            <div class="clearfix my-2">
+              <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                Downtime
+              </div>
+              <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                  text-red text-decoration-none">
+                Culture
+              </a>
+            </div>
+            <h5 class="font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Way Too Long with Stormzy and a British Neo-Nazi
+              </a>
+            </h5>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="intro-img w-100 fit-md-cover" src="https://source.unsplash.com/466x311/?weed,bong" alt="Unsplash is Down" />
+            </a>
+            <div class="clearfix my-2">
+              <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                periscope
+              </div>
+              <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                  text-red text-decoration-none">
+                U.S.
+              </a>
+            </div>
+            <h5 class="font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                I Travelled To Silicon Valley and Flogged Phony Weed For A laugh
+              </a>
+            </h5>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="intro-img w-100 fit-md-cover" src="https://source.unsplash.com/466x311/?miner,lesbian" alt="Unsplash is Down" />
+            </a>
+            <div class="clearfix my-2">
+              <div class="float-left text-light text-uppercase bg-danger p-1 font-weight-bold">
+                culture
+              </div>
+              <a href="#" class="float-left mt-1 ml-2 text-uppercase font-weight-bold
+                  text-red text-decoration-none">
+                World
+              </a>
+            </div>
+            <h5 class="font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Why Justin Bieber Thought Lil Wayne was a Lesbian Miner
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editors Pick -->
+      <section class="editors-pick mt-1 my-4">
+        <div class="w-100 my-3 py-1 d-flex flex-row justify-content-center border-bottom">
+          <div class="logo-n"></div>
+          <h6 class="mt-2 ml-2 text-uppercase text-dark font-weight-bold">
+            editor's pick
+          </h6>
+        </div>
+        <div class="d-flex flex-row flex-wrap row">
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?serbia,pcp" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    U.S.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                We're Snorting PCP with Serbia's Donkey Fluffers
+              </a>
+            </h5>
+            <div class="my-2">
+              Rain and cooler temperatures are reducing the risk of fire spreading. However, it is expected the temperatures will rise later this week
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?zurich,bouncer,jewish" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                A Jewish Bouncer's Tour of Zurich
+              </a>
+            </h5>
+            <div class="my-2">
+              The actor, who won the Cecil B. DeMille lifetime achievement award at the Globes, says he wants to silence "stupid questions" about not playing the bad guy.
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?dabbing,love,box" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Dabbing Butane at Lovebox: An Exposé
+              </a>
+            </h5>
+            <div class="my-2">
+              The event drew some 25,000 people as they marched across the bridge Sunday to show solidarity with the Jewish community.
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?russian,roulette" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                I Spent Halloween Playing Russian Roulette with Ukraine's Painters
+              </a>
+            </h5>
+            <div class="my-2">
+              Supermajority aims to mobilize at least 2 million women over the next year to become political leaders
+              in their communities and influence U.S. elections, including the upcoming 2020 race.
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?batman,north,korea" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Why North Korea's Answer to "Batman" Is Just Beyonce on Glue
+              </a>
+            </h5>
+            <div class="my-2">
+              The star of Borat took aim at the Facebook CEO and founder while presenting the film Jojo Rabbit at the Sunday award ceremony.
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?snapchat,parasite" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Why Alt-Right Parasite Robert Mugabe Isn't Hyped About Snapchat
+              </a>
+            </h5>
+            <div class="my-2">
+              "This Media Post will serve as a reminder that war powers reside in the Congress under the United States Constitution," the House Foreign Affairs committee tweeted.
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?hippy,folk,new,orleans" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Why a Lesbian Crew are the Hippest Folk-Tronica Band in New Orleans
+              </a>
+            </h5>
+            <div class="my-2">
+              President Donald Trump threatened Iraq with sanctions if it ordered U.S. troops out of the country and warned Iran he would hit cultural targets—a potential war crime—if it attacks Americans.
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-3 d-flex flex-column flex-nowrap py-2 py-lg-1">
+            <div class=" card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?myspace,kid" alt="Unsplash is Down" />
+              <div class="card-img-overlay p-0 d-flex">
+                <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                  <div class="p-2 font-weight-bold text-uppercase bg-light">
+                    u.s.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h5 class="my-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                We Met a Child on MySpace Who Travelled To Zagreb and Tortured Their Grandfather
+              </a>
+            </h5>
+            <div class="my-2">
+              The Democratic presidential candidate demanded U.S. forces be immediately withdrawn from Iraq and Syria.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Featured Slideshows -->
+      <div class="featured-slideshows mt-1 mb-3">
+        <div class="w-100 my-3 py-1 d-flex flex-row justify-content-center border-bottom">
+          <div class="mr-2 position-relative slideshow-logo">
+            <div class="logo-n position-absolute"></div>
+            <div class="logo-n position-absolute the-one-in-the-back"></div>
+          </div>
+          <h6 class="mt-2 ml-1 text-uppercase text-dark font-weight-bold">
+            featured slideshows
+          </h6>
+        </div>
+        <div class="d-flex flex-row flex-wrap row">
+          <article class="col-sm-4 col-lg-4 d-flex flex-column flex-nowrap">
+            <div class="slides-card card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?volcano" alt="Unsplash is Down" />
+              <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                <div class="p-2 font-weight-bold text-uppercase slides-overlay">
+                  <p class="slides-text">
+                    18
+                  </p>  
+                </div>
+              </a>
+            </div>
+            <h5 class="my-3 my-lg-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Active Volcanoes Around the World That Could Erupt at Any Moment
+              </a>
+            </h5>
+          </article>
+          <article class="col-sm-4 col-lg-4 d-flex flex-column flex-nowrap">
+            <div class="slides-card card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?bohemian,bohemia" alt="Unsplash is Down" />
+              <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                <div class="p-2 font-weight-bold text-uppercase slides-overlay">
+                  <p class="slides-text">
+                    12
+                  </p>
+                </div>
+              </a>
+            </div>
+            <h5 class="my-3 my-lg-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Inside the Last Bohemian Apartments of the Storied Hotel Chelsea
+              </a>
+            </h5>
+          </article>
+          <article class="col-sm-4 col-lg-4 d-flex flex-column flex-nowrap">
+            <div class="slides-card card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?starbucks" alt="Unsplash is Down" />
+              <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                <div class="p-2 font-weight-bold text-uppercase slides-overlay">
+                  <p class="slides-text">
+                    21
+                  </p>  
+                </div>
+              </a>
+            </div>
+            <h5 class="my-3 my-lg-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019
+              </a>
+            </h5>
+          </article>
+          <article class="col-sm-4 col-lg-4 d-flex flex-column flex-nowrap">
+            <div class="slides-card card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?coffee" alt="Unsplash is Down" />
+              <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                <div class="p-2 font-weight-bold text-uppercase slides-overlay">
+                  <p class="slides-text">
+                    19
+                  </p>  
+                </div>
+              </a>
+            </div>
+            <h5 class="my-3 my-lg-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                What Starbucks Christmas Holiday Drinks Are Available This Year?
+              </a>
+            </h5>
+          </article>
+          <article class="col-sm-4 col-lg-4 d-flex flex-column flex-nowrap">
+            <div class="slides-card card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?pumpkin,carving" alt="Unsplash is Down" />
+              <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                <div class="p-2 font-weight-bold text-uppercase slides-overlay">
+                  <p class="slides-text">
+                    12
+                  </p>
+                </div>
+              </a>
+            </div>
+            <h5 class="my-3 my-lg-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Meet the Master Carver Who Turns Pumpkins Into Portraits
+              </a>
+            </h5>
+          </article>
+          <article class="col-sm-4 col-lg-4 d-flex flex-column flex-nowrap">
+            <div class="slides-card card border-0 p-0">
+              <img class="card-img-top rounded-0" src="https://source.unsplash.com/397x265/?cosplay" alt="Unsplash is Down" />
+              <a href="#" class="mt-auto text-red text-decoration-none stretched-link">
+                <div class="p-2 font-weight-bold text-uppercase slides-overlay">
+                  <p class="slides-text">
+                    40
+                  </p>  
+                </div>
+              </a>
+            </div>
+            <h5 class="my-3 my-lg-2 font-weight-bold">
+              <a href="#" class="text-body text-decoration-none underline-red">
+                Our Cosplay Favorites from NYCC 2019
+              </a>
+            </h5>
+          </article>
+        </div>
+      </div>
+
+      <div class="list-group list-group-flush px-1 mx-lg-n1">
+        <section id="us" class="list-group-item pt-4 border-bottom px-0">
+          <h5 class="my-2 font-weight-bold text-uppercase">
+            <a href="https://www.newsweek.com/us" class="article-category-heading text-red text-decoration-none">
+              U.S.
+            </a>
+          </h5>
+          <div class="d-md-flex flex-md-row flex-md-nowrap mx-md-n3">
+            <div class="col-12 col-md-8 d-md-flex flex-md-row px-0">
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/us">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?iowa" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/us" class="text-body text-decoration-none underline-red">
+                    Elizabeth Warren Thanks Julian Castro For His Support Ahead of Iowa Caucus
+                  </a>
+                </h5>
+              </div>
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/us">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?jayz,beyonce" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/us" class="text-body text-decoration-none underline-red">
+                    Beyonce and Jay Z's Golden Globes Champagne: Ace of Spades Price
+                  </a>
+                </h5>
+              </div>
+            </div>
+            <div class="aside-md col-md-4 list-group list-group-flush mt-md-n3 px-0 px-md-3">
+              <div class="list-group-item clearfix border-top-0 px-0">
+                <a href="https://www.newsweek.com/us">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?ambassador" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/us" class="text-body text-decoration-none underline-red">
+                    Former U.S. Ambassador Wants 'No Part' of Trump's 'Posturing About Iran'
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/us">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?adviser" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/us" class="text-body text-decoration-none underline-red">
+                    Top Iranian Adviser to President: 'Sole Problem is Trump,' Not Americans
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/us">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?boris,johnson" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/us" class="text-body text-decoration-none underline-red">
+                    British PM Boris Johnson Warns Trump Against Attacking Iran Cultural Sites
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="world" class="list-group-item pt-4 border-bottom px-0">
+          <h5 class="my-2 font-weight-bold text-capitalize">
+            <a href="https://www.newsweek.com/world" class="article-category-heading text-red text-decoration-none">
+              world
+            </a>
+          </h5>
+          <div class="d-md-flex flex-md-row flex-md-nowrap mx-md-n3">
+            <div class="col-12 col-md-8 d-md-flex flex-md-row px-0">
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/world">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?bite" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/world" class="text-body text-decoration-none underline-red">
+                    Woman Jailed After Biting Police Officer Minutes Into The New Year
+                  </a>
+                </h5>
+              </div>
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/world">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?funeral,eulogy" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/world" class="text-body text-decoration-none underline-red">
+                    Coleimani's Daughter Calls Trump 'Crazy' at Eulogy
+                  </a>
+                </h5>
+              </div>
+            </div>
+            <div class="aside-md col-md-4 list-group list-group-flush mt-md-n3 px-0 px-md-3">
+              <div class="list-group-item clearfix border-0 px-0">
+                <a href="https://www.newsweek.com/world">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?jail,jailed" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/world" class="text-body text-decoration-none underline-red">
+                    RMan Jailed for Raping 48 Men Dubbed 'Britain's Most Prolific Rapist'
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/world">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?child" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/world" class="text-body text-decoration-none underline-red">
+                    13-Year-Old Child Killed After American Family Attacked in Mexico
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/world">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?shark" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/world" class="text-body text-decoration-none underline-red">
+                    Wife of Diver Mauled by Great White Shark Maintains Culling Opposition
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="business" class="list-group-item pt-4 border-bottom px-0">
+          <h5 class="my-2 font-weight-bold text-capitalize">
+            <a href="https://www.newsweek.com/business" class="article-category-heading text-red text-decoration-none">
+              business
+            </a>
+          </h5>
+          <div class="d-md-flex flex-md-row flex-md-nowrap mx-md-n3">
+            <div class="col-12 col-md-8 d-md-flex flex-md-row px-0">
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/business">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?wage" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/business" class="text-body text-decoration-none underline-red">
+                    Federal Minimum Wage Has Not Changed in a Decade; 21 States Still Use It
+                  </a>
+                </h5>
+              </div>
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/business">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?stamps,usps" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/business" class="text-body text-decoration-none underline-red">
+                    Stamp Price Increases 2020: USPS Stamp, Mail Rates Going Up in January?
+                  </a>
+                </h5>
+              </div>
+            </div>
+            <div class="aside-md col-md-4 list-group list-group-flush mt-md-n3 px-0 px-md-3">
+              <div class="list-group-item clearfix border-0 px-0">
+                <a href="https://www.newsweek.com/business">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?markets" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/business" class="text-body text-decoration-none underline-red">
+                    Market Posts Records Under Trump, but Obama-era Markets Performed Better
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/business">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?french,france" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/business" class="text-body text-decoration-none underline-red">
+                    Class Warfare, Inequality Board Game 'Kapital!' Sells Out in French Stores
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/business">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2" src="https://source.unsplash.com/135x90/?andrew,yang,amazon,facebook" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/business" class="text-body text-decoration-none underline-red">
+                    Andrew Yang: Give Americans 'A Tiny Slice' of Amazon, Facebook, Google Cash
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="tech-science" class="list-group-item pt-4 border-bottom px-0">
+          <h5 class="my-2 font-weight-bold text-capitalize">
+            <a href="https://www.newsweek.com/tech-science" class="article-category-heading text-red text-decoration-none">
+              tech & science
+            </a>
+          </h5>
+          <div class="d-md-flex flex-md-row flex-md-nowrap mx-md-n3">
+            <div class="col-12 col-md-8 d-md-flex flex-md-row px-0">
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/tech-science">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?galaxy,signal,radio" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/tech-science" class="text-body text-decoration-none underline-red">
+                    Mystery Repeating Radio Signal Traced to Strange V-Shaped Region of Galaxy
+                  </a>
+                </h5>
+              </div>
+              <div class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/tech-science">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?full,moon,eclipse" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/tech-science" class="text-body text-decoration-none underline-red">
+                    Full Wolf Moon Eclipse: First Full Moon of 2020 to Rise This Week
+                  </a>
+                </h5>
+              </div>
+            </div>
+            <div class="aside-md col-md-4 list-group list-group-flush mt-md-n3 px-0 px-md-3">
+              <div class="list-group-item clearfix px-0 border-0">
+                <a href="https://www.newsweek.com/tech-science">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-divs" src="https://source.unsplash.com/135x90/?climate,change,global,warming" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/tech-science" class="text-body text-decoration-none underline-red">
+                    Climate Change Study Found Evidence of Global Warming Every Day Since 2012
+                  </a>
+                </h6>
+              </div>
+              <div class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/tech-science">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-divs" src="https://source.unsplash.com/135x90/?greta,thunberg" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/tech-science" class="text-body text-decoration-none underline-red">
+                    Greta Thunberg Turns 17: A Look Back at Her Year
+                  </a>
+                </h6>
+              </div>
+              <article class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/tech-science">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?terracotta,warriors,tomb,china" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/tech-science" class="text-body text-decoration-none underline-red">
+                    Hundreds More Terracotta Warriors Found at Tomb of China's First Emperor
+                  </a>
+                </h6>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div id="culture" class="list-group-itempt-4 border-bottom mt-4 px-0">
+          <h5 class="my-2 font-weight-bold text-capitalize">
+            <a href="https://www.newsweek.com/culture" class="article-category-heading text-red text-decoration-none">
+              culture
+            </a>
+          </h5>
+          <div class="d-md-flex flex-md-row flex-md-nowrap mx-md-n3">
+            <div class="col-12 col-md-8 d-md-flex flex-md-row p-0">
+              <article class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/culture">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/culture" class="text-body text-decoration-none underline-red">
+                    #HollywoodHypocrites Trends After Ricky Gervais' Golden Globes Monologue
+                  </a>
+                </h5>
+              </article>
+              <article class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/culture">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?gervais,golden" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/culture" class="text-body text-decoration-none underline-red">
+                    What the Golden Globes Results Mean for the Oscars
+                  </a>
+                </h5>
+              </article>
+            </div>
+            <div class="aside-md col-md-4 list-group list-group-flush mt-md-n3 px-0 px-md-3">
+              <article class="list-group-item clearfix px-0 border-0">
+                <a href="https://www.newsweek.com/culture">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?netflix,season" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/culture" class="text-body text-decoration-none underline-red">
+                    'Anne With an E' Season 4: Will There Be Another Season on Netflix?
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/culture">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?internet,netflix" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/culture" class="text-body text-decoration-none underline-red">
+                    'Messiah' on Netflix: What Oscar Wallace's Role Reveals About Season 2
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/culture">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?bounty" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/culture" class="text-body text-decoration-none underline-red">
+                    Comedian George Lopez Under Fire for Joke About $80-Million Trump Bounty
+                  </a>
+                </h6>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div id="sports" class="list-group-item pt-4 border-bottom px-0">
+          <h5 class="my-2 font-weight-bold text-capitalize">
+            <a href="https://www.newsweek.com/sports" class="article-category-heading text-red text-decoration-none">
+              sports
+            </a>
+          </h5>
+          <div class="d-md-flex flex-md-row flex-md-nowrap mx-md-n3">
+            <div class="col-12 col-md-8 d-md-flex flex-md-row px-0">
+              <article class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/sports">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?coach,nfl" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/sports" class="text-body text-decoration-none underline-red">
+                    Tua Tagovailoa Draft Announcement: All You Need to Know
+                  </a>
+                </h5>
+              </article>
+              <article class="col-md-6 card border-0 px-0 px-md-3">
+                <a href="https://www.newsweek.com/sports">
+                  <img class="card-top-img w-100" src="https://source.unsplash.com/397x265/?quarterback,nfl" alt="Unsplash is Down" />
+                </a>
+                <h5 class="card-body px-0 font-weight-bold">
+                  <a href="https://www.newsweek.com/sports" class="text-body text-decoration-none underline-red">
+                    2020 NFL Draft Order: Updated Top 24 Picks after Wild-card Round
+                  </a>
+                </h5>
+              </article>
+            </div>
+            <div class="aside-md col-md-4 list-group list-group-flush mt-md-n3 px-0 px-md-3">
+              <article class="list-group-item clearfix px-0 border-0">
+                <a href="https://www.newsweek.com/sports">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?playoffs,nfl" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/sports" class="text-body text-decoration-none underline-red">
+                    NFL Playoffs 2020: Betting Lines and Odds for Divisional Round Matchups
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/sports">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?patriots,brady" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/sports" class="text-body text-decoration-none underline-red">
+                    Is Tom Brady Retiring in 2020? Breaking down the Patriots Star's Options
+                  </a>
+                </h6>
+              </article>
+              <article class="list-group-item clearfix px-0">
+                <a href="https://www.newsweek.com/sports">
+                  <img class="float-left col-4 col-md-5 px-0 mr-2 image-side-articles" src="https://source.unsplash.com/135x90/?superbowl,nfl" alt="Unsplash is Down" />
+                </a>
+                <h6 class="float-none font-weight-bold">
+                  <a href="https://www.newsweek.com/sports" class="text-body text-decoration-none underline-red">
+                    NFL Playoffs: Updated Bracket and Super Bowl Chances for Divisional Round
+                  </a>
+                </h6>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Stuff -->
+
+        <div class="pt-4 row">
+
+          <!-- Subscribe -->
+          <div class="col-lg-7">
+
+            <!-- Heading -->
+            <h5 class="my-2 font-weight-bold text-capitalize">
+              <a href="#" class="article-category-heading text-red text-decoration-none">
+                subscribe
+              </a>
+            </h5>
+            
+            <div class="row travel-card p-0">
+              <div class="col-md-4 p-3 h-100">
+                <img class="img-fluid w-100" src="https://d.newsweek.com/en/full/1556038/january-03-17-2020-cover.jpg" alt="Unsplash is Down" />
+              </div>
+              <div class="col-md-8 px-md-4 py-md-5 pt-0 px-5 pb-5 h-100">
+                <h3 class=" mb-3">In-depth Stories You Don't See Elsewhere About Topics
+                    You
+                    Want to Read!</h3>
+                <p class=" mb-4">All Access + Weekly Delivery.
+                    Choose A Membership That's Perfect for You!</p>
+                    <a href="#" class="header-subscribe">
+                      <div class="header-elements button-sub-sign">
+                        SUBSCRIBE
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                    </a>
+            </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-5">
+            <!-- Heading -->
+            <div class="col-lg-5">
+              <a href="#" class="article-category-heading text-red text-decoration-none">
+                <h5 class="my-2 font-weight-bold text-capitalize">
+                  newsletter
+                </h5>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-6 h-100 p-0 testiini">
+                <img class="h-100" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265" alt="Unsplash is Down" />
+              </div>
+              <div class="col-md-6 px-4 py-5 border p-5">
+                <h3 class="last-section__img-title mb-3">The Starting 5</h3>
+                <p class="last-section__img-text mb-4">Take back your inbox. Sign up for our newsletter and
+                    start making sense of the world around you.</p>
+                  <a href="#" class="header-subscribe">
+                    <div class="header-elements button-sub-sign">
+                      Sign Up
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                  </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="mt-4">
+        <div class="border-bottom pb-2">
+          <div class="d-flex flex-wrap ">
+            <div class="d-flex flex-wrap footer-top-left flex-grow-1">
+              <a class="footer-brand" href="/">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+                  <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+                  </g></svg>
+                </a>
+                <p class="ml-2">© 2020 Newsweek</p>
+            </div>
+            <!-- Social icons -->
+            <div class="footer-top-right align-items-center font-weight-bold">
+              <i class="pr-2 fab fa-facebook-square"></i>
+              <i class="pr-2 fab fa-twitter-square"></i>
+              <i class="pr-2 fab fa-instagram"></i>
+              <i class="pr-2 fab fa-tumblr"></i>
+              <i class="pr-2 fab fa-linkedin-in"></i>
+             </div>
+            </div>
+        </div>
+        
+        <ul class="d-flex flex-wrap pt-4">
+          <li class="pr-2 pl-2 font-weight-bold">
+            Editions:
+          </li>
+          <li class="border-right pr-2 pl-2">
+            <a href="#">
+              U.S. Edition
+            </a>
+          </li>
+          <li class="border-right pr-2 pl-2">
+            <a href="#">
+              日本
+            </a>
+          </li>
+          <li class="border-right pr-2 pl-2">
+            <a href="#">
+              한국
+            </a>
+          </li>
+          <li class="border-right pr-2 pl-2">
+            <a href="#">
+              Pakistan
+            </a>
+          </li>
+          <li class="border-right pr-2 pl-2">
+            <a href="#">
+              Polska
+            </a>
+          </li>
+          <li class="pr-2 pl-2">
+            <a href="#">
+              România
+            </a>
+          </li>
+        </ul>
+
+        <ul class="d-flex flex-wrap pt-2">
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              About Us
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Corrections
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Contact Us
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Editorial Guidelines
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Advertise
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Copyright
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Terms & Conditions
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Privacy Policy
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Cookie Policy
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Terms of Sale
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Archive
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2 border-right">
+            <a href="#">
+              Announcements
+            </a>
+          </li>
+          
+          <li class="pr-2 pl-2">
+            <a href="#">
+              Consent preferences
+            </a>
+          </li>
+        </ul>
+
+      </footer>
+
+    </main>
 
     <!-- Optional JavaScript -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $(document).scroll(function(){
+          $('.nav-small-container').toggleClass('scrolled', $(this).scrollTop() > 200);
+      });
+    </script>
   </body>
 </html>
 
